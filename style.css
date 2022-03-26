@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.main-content{
+   display: grid;
+   grid-template-columns: 300px 700px;
+   height: 1000px;
+   margin: 20px auto;
+   width: 90%;
+}
+
+.left-section{
+   background-color: #28292e;
+ grid-column: span 1;
+}
+
+.right-section{
+    background-color: darkgray;
+     grid-column: span 1 /span 2;
+} 
+
+.left-section .left-content{
+    padding: 1rem;
+    color: white;
+}
+
+.left-content .profile-image{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+
+}
+
+.profile-image img{
+    height: 150px;
+    width: 100%;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+}
+
+.left-content .name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+
+.line-break{
+    padding: 0px;
+     color: grey;
+}
+.left-content .description{
+     font-size: 0.75rem;
+     text-align: center;
+     padding: 1rem;
+}
+
+.left-content .designation{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5;
+}
+
+.contact-item .icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.contact-item li{
+    list-style: none;
+    
+}
+
+.contact-item li a{
+    text-decoration: none;
+    pad: 10px;
+}
+
+.skills .skills-title{
+    font-size: 1.75rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.skills .skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.skills .skill-progress .progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    background-color: white;
+}
+
+.right-section .right-main-content{
+    padding: 2rem 3rem;
+}
+
+.right-main-content .right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.right-section  .personal-details{
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
